@@ -732,7 +732,6 @@ body {
 
 @media (max-width: 479.98px) {
   .items__footer {
-    color: #000000;
     margin: 24px 161px 24px 32px;
   }
 }
@@ -753,7 +752,30 @@ body {
   align-items: center;
   margin: 70px 0px;
 }
+
+@media (max-width: 580.98px) {
+  .footer__header {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
 .header__footer-logo {
+}
+
+@media (max-width: 580.98px) {
+  .header__footer-logo {
+    margin: 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .header__footer-logo {
+    margin: 12px 224px 32px 32px;
+  }
 }
 .header__footer-button {
   border-radius: 6px;
@@ -766,6 +788,21 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease 0s;
 }
+
+@media (max-width: 580.98px) {
+  .header__footer-button {
+    width: 75%;
+    padding: 22px 73px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .header__footer-button {
+    width: 100%;
+    padding: 12px 72px;
+  }
+}
 .header__footer-button:hover {
   background-color: #ffffffe0;
 }
@@ -775,14 +812,34 @@ body {
   justify-content: space-between;
   margin: 0px 0px 28px 0px;
 }
+
+@media (max-width: 580.98px) {
+  .footer__link {
+    flex-direction: column;
+  }
+}
+
 .link__links {
   display: flex;
 }
+
+@media (max-width: 479.98px) {
+  .link__links {
+    flex-wrap: wrap;
+  }
+}
+
 .link {
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+}
+
+@media (max-width: 479.98px) {
+  .link {
+    line-height: 200%;
+  }
 }
 
 .link:hover {
@@ -794,6 +851,12 @@ body {
 }
 .link__meassagers {
   display: flex;
+}
+
+@media (max-width: 580.98px) {
+  .link__meassagers {
+    margin-top: 20px;
+  }
 }
 
 .link__meassager {
@@ -808,6 +871,14 @@ body {
   justify-content: space-between;
   margin: 29px 0;
 }
+
+@media (max-width: 479.98px) {
+  .footer__contacts {
+    flex-direction: column;
+    margin: 65px 90px 0px 0px;
+  }
+}
+
 .contacts__company {
 }
 .company {
@@ -818,6 +889,12 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #ffffff;
+}
+
+@media (max-width: 479.98px) {
+  .company__link {
+    margin-top: 32px;
+  }
 }
 
 .company__link:hover {
